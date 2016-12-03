@@ -26,7 +26,7 @@ void test00_nullptr() {
   char* pchar;
 
   f(0);  // calls f(int)
-  f(nullptr);  // calls f(void*)
+  f(nullptr);  // calls f(void*) or calls f(char*) when only one of them exists
   f(pchar);  // calls f(void*), or calls f(char*) if f(char*) exists
 
 /*
